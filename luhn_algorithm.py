@@ -27,7 +27,7 @@ elif choice == 2 :
     clear()
     r=int(input("How many numbers do you want?\n"))
     q=0
-    x=int(input("Enter how long your number must be"))
+    x=int(input("Enter how long your number must be : \n"))
     y=x+1
     x2=pow(10 , x-1) 
     y2=pow(10, y-1)
