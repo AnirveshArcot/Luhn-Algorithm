@@ -6,7 +6,7 @@ if choice == 1 :
     q1=input("Would you like to check if your credit card is valid (y/n) : ")
     if q1 == 'y':
       card = input("Enter your card no : ")
-      f = open("test.txt", "a") 
+      f = open("NumLogs.txt", "a") 
       if(luhn_algorithm(card)):                 #The boolean value is returned here where its directly integrated with the if staement without the use of a variable 
           print("The card number '"+card+"' is valid!")
           f.write(card+"  1\n")
