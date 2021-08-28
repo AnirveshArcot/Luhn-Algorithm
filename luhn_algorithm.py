@@ -36,8 +36,6 @@ elif choice == 2 :
         if (luhn_algorithm(str(card))):
             print(card_format(card))
             q=q+1
-            cvv=str(random.randint(100,999))
-            print("Respective random CVV : "+cvv)
             print("")    
     os.system('pause')
     clear()
