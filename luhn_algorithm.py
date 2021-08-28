@@ -29,8 +29,8 @@ elif choice == 2 :
     q=0
     x=int(input("Enter how long your number must be"))
     y=x+1
-    x2=pow(10 , x) 
-    y2=pow(10, x)
+    x2=pow(10 , x-1) 
+    y2=pow(10, y-1)
     while (q<r) :
         card=random.randint(x2,y2)
         if (luhn_algorithm(str(card))):
