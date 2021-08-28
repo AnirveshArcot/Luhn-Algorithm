@@ -1,4 +1,4 @@
-0 denotes that the number is not valid while 1 denotes that the numebr is valid
+note : 0 denotes that the number is not valid while 1 denotes that the numebr is valid
 132413  0
 21241351  1
 5285 1033 0194 7757  1
