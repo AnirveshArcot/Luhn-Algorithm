@@ -23,19 +23,24 @@ if choice == 1 :
     f.close()
 
 elif choice == 2 :
-    name=platform.system()
     clear()
-    r=int(input("How many numbers do you want?\n"))
-    q=0
-    x=int(input("Enter how long your number must be : \n"))
-    y=x+1
-    x2=pow(10 , x-1) 
-    y2=pow(10, y-1)
-    while (q<r) :
-        card=random.randint(x2,y2)
+    numofnumbers=int(input("How many numbers do you want?\n"))
+    repeat=0
+    lowerlmt=int(input("Enter how long your number must be (WARNING : it cannot be a 1 digit number) : \n"))
+    upperlmt=lowerlmt+1
+    lowerlmt2=pow(10 , lowerlmt-1) 
+    upperlmt2=pow(10, upperlmt-1)
+    if lowerlmt<2:
+        clear()
+        print("Are you blind?")
+        os.system('pause')
+        clear()
+        exit()
+    while (repeat<numofnumbers) :
+        card=random.randint(lowerlmt2,upperlmt2)
         if (luhn_algorithm(str(card))):
             print(card_format(card))
-            q=q+1
+            repeat=repeat+1
             print("")    
     os.system('pause')
     clear()
